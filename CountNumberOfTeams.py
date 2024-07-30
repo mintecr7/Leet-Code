@@ -7,10 +7,10 @@ class Solution:
 
         teams, n = 0, len(rating)
         for i, b in enumerate(rating):
-            l = sum(a < b for a in rating[:i])
-            r = sum(c > b for c in rating[i + 1 :])
-            teams += l * r
-            teams += (i - l) * (n - i - 1 - r)
+            left = sum(a < b for a in rating[:i])
+            right = sum(c > b for c in rating[i + 1 :])
+            teams += left * right
+            teams += (i - left) * (n - i - 1 - right)
         return teams
 
 
