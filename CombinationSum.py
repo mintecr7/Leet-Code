@@ -7,7 +7,7 @@ class Solution:
 
         def dfs(i: int, cur: List[int], total: int):
             if total == target:
-                sums.append(cur.copy())
+                sums.append(cur[:])
                 return
             if i >= len(candidates) or target < total:
                 return
