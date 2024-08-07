@@ -19,26 +19,23 @@ An example mapping of letters to keys on a telephone keypad is given below.
 Note that 1, *, #, and 0 do not map to any letters.
 """
 
-from collections import Counter
-
 
 class Solution:
     def minimumPushes(self, word: str) -> int:
-        count = Counter(word)
-        sorted_values = sorted(count.values(), reverse=True)
-        free = 8
-        mult = 1
-        clicks = 0
-        for val in sorted_values:
-            clicks += val * mult
-            free -= 1
-            if free == 0:
-                free = 8
-                mult += 1
-        return clicks
+        res = 0
+        cnt = [0 for _ in range(26)]
+        for c in word:
+            cnt[ord(c) - 97] += 1
+        cnt.sort()
+        print(cnt)
+        for i in range(25, -1, -1):
+            if cnt[i] == 0:
+                break
+            res += cnt[i] * ((25 - i) // 8 + 1)
+        return res
 
 
-word = "aabbccddeeffgghhiiiiii"
+word = "MinimumNumberOfPushesToTypeWordpy"
 a = Solution()
 ans = a.minimumPushes(word)
 
