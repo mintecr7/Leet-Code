@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def rob(self, nums: List[int]) -> int:
         def rob_linear(houses: List[int]) -> int:
@@ -17,10 +18,8 @@ class Solution:
         rob_excluding_first = rob_linear(nums[1:])
         return max(rob_excluding_last, rob_excluding_first)
 
-        
 
-
-nums = [2,3,2]
+nums = [2, 3, 2]
 
 a = Solution()
 
