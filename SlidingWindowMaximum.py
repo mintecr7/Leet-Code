@@ -18,8 +18,8 @@ class Solution:
             left = window.pop(0)
             window.append(nums[i])
 
-            print(f"current poped {left}")
-            print(f"cuurent max {curr_max}")
+            print(f"current popped {left}")
+            print(f"current max {curr_max}")
             print(f"new add value {nums[i]}")
             print(f"current max windo {window}")
             if nums[i] > curr_max:
