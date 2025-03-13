@@ -26,18 +26,18 @@ class Solution:
 
     def check_substring(self, sub_str: str ) -> bool:
 
-      vowls = 'aeiou'
+      vowels = 'aeiou'
       print(sub_str)
-      for vowl in vowls:
-        if sub_str.count(vowl) != 1:
+      for vowel in vowels:
+        if sub_str.count(vowel) != 1:
           
           return False
       return True
 
     def k_zero(self) -> bool:
-      vowls = 'aeiou'
-      for vowl in  vowls:
-        if vowl not in vowls:
+      vowels = 'aeiou'
+      for vowel in  vowels:
+        if vowel not in vowels:
           return False
       return True
 
