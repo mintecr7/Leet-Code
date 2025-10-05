@@ -1,0 +1,18 @@
+class Solution:
+	def numberOfSubstrings(self, s: str) -> int:
+		n = len(s)
+		res = [-1, -1, -1] 
+		count = 0
+		for i in range(n):
+			res[ord(s[i]) - 97] = i
+			count +=  min(res) + 1
+		return count
+
+
+
+s = "ababbbc"
+a = Solution()
+
+ans = a.numberOfSubstrings(s)
+
+print(ans)
