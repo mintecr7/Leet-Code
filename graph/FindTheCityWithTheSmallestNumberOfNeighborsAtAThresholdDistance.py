@@ -8,7 +8,6 @@ class Solution:
         graph = [[-1] * n for _ in range(n)]
         for start, end, weight in edges:
             graph[start][end] = graph[end][start] = weight
-        print(graph)
         return
 
 

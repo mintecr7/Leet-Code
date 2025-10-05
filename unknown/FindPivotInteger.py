@@ -5,12 +5,6 @@ class Solution:
         _comp = 0
 
         while True:
-            print(f"sum : {_sum}")
-            print(f"pivot : {pivot}")
-            print(f"right side: {_comp}")
-
-            print(f"{_sum - pivot} vs {pivot + _comp}")
-
             if _sum  == pivot + _comp:
                 return pivot
             elif _sum >= (pivot ) + _comp:

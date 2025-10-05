@@ -9,7 +9,7 @@ class Solution:
         res = words[0]
         # let =
         count = Counter(res)
-        check =
+        # check =
 
         for i in range(1, len(words) ):
             # print(words[i], res)

@@ -11,7 +11,6 @@ class Solution:
             k -= tot
 
         for i in range(n):
-            print(f"current index: {i} and current k: {k}")
             if k < chalk[i]:
                 return i
             k -= chalk[i]
