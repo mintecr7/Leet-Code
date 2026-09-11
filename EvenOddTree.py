@@ -22,6 +22,3 @@ class Solution:
 
 
         return False
-
-    def travers(self, node: Optional[TreeNode], current_depth=0):
-        if
