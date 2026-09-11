@@ -1,7 +1,5 @@
-from typing import List
-
 class Solution:
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+    def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
 
         """
             This function takes two arguments: 'matrix'(2D list of integers) and 'target' (integer).
@@ -15,7 +13,7 @@ class Solution:
             As the function performs two binary searches, the time complexity is O(log(m * n)).
         """
 
-        def check(nums: List[int]):
+        def check(nums: list[int]):
             low, high = 0, len(nums) - 1
             while low <=  high:
                 mid = low + ( high - low) // 2
