@@ -18,7 +18,6 @@ class Solution:
 
                 height = max(height, books[j - 1][1])
                 min_height[i] = min(min_height[i], min_height[j - 1] + height)
-            print(min_height)
         return min_height[n]
 
 

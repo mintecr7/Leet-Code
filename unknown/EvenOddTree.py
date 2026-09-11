@@ -1,4 +1,4 @@
-from typing import Optional
+
 class TreeNode:
     """
         this problem is not solved yet
@@ -15,7 +15,7 @@ class TreeNode:
         self.depth = depth
         self.isEvenOdd = isEvenOdd
 class Solution:
-    def isEvenOddTree(self, root: Optional[TreeNode]) -> bool:
+    def isEvenOddTree(self, root: TreeNode | None) -> bool:
         if root and not root.left and not root.right:
             return False
 

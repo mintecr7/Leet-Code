@@ -1,7 +1,7 @@
 
 class Solution:
     def findTheWinner(self, n: int, k: int) -> int:
-        print(n, k)
+
         if n == 1:
             return 1
         else:

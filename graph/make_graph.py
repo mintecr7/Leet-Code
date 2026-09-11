@@ -20,14 +20,14 @@ class Graph():
         visited[v] = True
         recStack[v] = True
  
-        # Recur for all neighbours
-        # if any neighbour is visited and in
+        # Recur for all neighbors
+        # if any neighbor is visited and in
         # recStack then graph is cyclic
-        for neighbour in self.graph[v]:
-            if visited[neighbour] == False:
-                if self.isCyclicUtil(neighbour, visited, recStack) == True:
+        for neighbor in self.graph[v]:
+            if visited[neighbor] == False:
+                if self.isCyclicUtil(neighbor, visited, recStack) == True:
                     return True
-            elif recStack[neighbour] == True:
+            elif recStack[neighbor] == True:
                 return True
  
         # The node needs to be popped from
