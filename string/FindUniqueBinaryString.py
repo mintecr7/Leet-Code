@@ -1,7 +1,8 @@
-from typing import List
 from itertools import product
+
+
 class Solution:
-    def findDifferentBinaryString(self, nums: List[str]) -> str:
+    def findDifferentBinaryString(self, nums: list[str]) -> str:
       n= len(nums)
       perms = self.generate_binary_permutations(n)
       for perm in perms:
@@ -9,7 +10,7 @@ class Solution:
             return perm
       return ""
 
-    def generate_binary_permutations(self, n) -> List[str]:
+    def generate_binary_permutations(self, n) -> list[str]:
       return [''.join(p) for p in product('01', repeat=n)]
 
 

@@ -1,4 +1,3 @@
-from typing import Optional
 
 
 class ListNode:
@@ -8,7 +7,7 @@ class ListNode:
 
 
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def swapPairs(self, head: ListNode | None) -> ListNode | None:
         prev = None
         curr = head
 
